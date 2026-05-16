@@ -1,0 +1,146 @@
+/* 基本設定 */
+body {
+    font-family: "Meiryo", sans-serif;
+    color: #222222; /* 指定カラー [cite: 29] */
+    line-height: 1.6;
+    margin: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ヘッダー [cite: 4] */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #222222;
+    font-weight: bold;
+}
+
+/* メインビジュアル [cite: 7, 8] */
+.main-visual {
+    height: 600px;
+    background: url('main-bg.jpg') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.main-visual h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+/* セクション共通 [cite: 23, 24] */
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.en-title {
+    display: block;
+    font-size: 24px;
+    color: #ffaa00; /* 黄色のアクセント */
+}
+
+.section-title h3 {
+    font-size: 28px;
+    margin-top: 5px;
+}
+
+/* ABOUT写真 [cite: 35, 38] */
+.about-photos {
+    display: flex;
+    gap: 0; /* 画像をくっつける指定  */
+    margin-top: 40px;
+}
+
+.about-photos img {
+    width: 33.333%;
+    height: auto;
+}
+
+/* コースセクション [cite: 44, 47] */
+.course-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.course-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.course-img, .course-detail {
+    flex: 1;
+}
+
+.course-detail {
+    padding: 40px;
+}
+
+/* フォーム [cite: 68] */
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #222222;
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    margin: 40px auto;
+    padding: 15px;
+    background: #ffaa00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8; /* ホバーアクション [cite: 70] */
+}
+
+/* フッター [cite: 78] */
+.footer {
+    background: #707070;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
